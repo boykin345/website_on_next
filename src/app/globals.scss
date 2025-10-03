@@ -1,0 +1,477 @@
+@use "tailwindcss";
+
+
+$primary-color: #f5d9a6;
+$hover-color: #ffea63;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  background-image: url("/AboutWallpaper.jpg");
+  background-size: 20vh 20vw;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Pixelscapes, sans-serif;
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.spin-cw {
+  animation: spinClockwise 6s linear infinite;
+}
+
+.spin-ccw {
+  animation: spinCounterClockwise 6s linear infinite;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
+}
+
+@keyframes spinClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinCounterClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 2rem;
+  color: $primary-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Pixelscapes, serif;
+  font-size: 1.2rem;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+    &.active {
+      border-bottom: 2px solid $primary-color;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 0.25rem;
+    }
+  }
+}
+
+
+.about {
+  font-size: 2rem;
+}
+
+.about-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes, serif;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+
+  h1,
+  h2,
+  h3 {
+    font-family: Pixelscapes, serif;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+
+.about-container-contact {
+  height: 280px;
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes, serif;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+
+  h1,
+  h2,
+  h3 {
+    font-family: Pixelscapes, serif;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+}
+
+.about-text {
+  max-width: 50vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.api-text {
+  max-width: 50vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+.About {
+  font-size: 2rem;
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.aboutsection p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.blog-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes, serif;
+  color: $primary-color;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+  flex-direction: column;
+  display: flex;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Pixelscapes, serif;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .post-date {
+    font-size: 1.4rem;
+    color: $primary-color;
+    display: inline-block;
+    flex: 1;
+    width: 20rem;
+    text-align: center;
+    margin-right: 3rem;
+  }
+
+  .post-info {
+    text-align: left;
+    flex: 1;
+  }
+
+  .post-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 1.4rem;
+    text-align: left;
+    transition: all 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+      color: $hover-color;
+    }
+  }
+}
+
+.main-photo {
+  width: 340px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.projects-container,
+.project,
+.navbar-container {
+  max-width: 75vw;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgba(206, 184, 119, 0.1);
+  text-align: center;
+  font-family: Pixelscapes, serif;
+  color: $primary-color;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.project {
+  h2 {
+    font-family: Pixelscapes, serif;
+    color: $primary-color;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.code-block {
+  background: #222;
+  color: #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  border: 2px solid #555;
+  box-shadow: 0 0 0 4px #000 inset;
+  font-family: "Press Start 2P", monospace;
+  image-rendering: pixelated;
+}
+
+.code-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.github-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  image-rendering: pixelated;
+}
+
+@font-face {
+  font-family: Pixelscapes;
+  src: url("/fonts/Pixelscapes.ttf");
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+@keyframes slideUpFromFloor {
+  from {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      width: 100%;
+      max-width: 300px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+
+        &.active {
+          font-weight: bold;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    > a {
+      order: -1;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.icon-large {
+  width: 80px;
+  height: 80px;
+}
