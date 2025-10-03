@@ -39,7 +39,7 @@ const BlogPage = () => {
               href="https://github.com/boykin345/Website"
               className="post-link"
             >
-              /This website
+              /This_website
             </Link>
             <span className="post-author"></span>
           </div>
