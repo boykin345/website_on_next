@@ -12,14 +12,12 @@ const AboutPage = () => {
   }, []);
   return (
     <>
-      <meta name="viewport" content="initial-scale=1.0" />
-      <meta charSet="utf-8" />
       <title>About</title>
 
       <section className="about-container">
         <div className="mb-8">
           <Image
-            src="/Star.png"
+            src="/favicon.ico"
             alt="main-photo-page"
             className="main-photo"
             width={200}
@@ -29,7 +27,16 @@ const AboutPage = () => {
         <h1 className="about-text">Mikhail Y. Kolyakin</h1>
         <div>
           <p className="about-text">
-            Junior React web developer working in fintech. Interested in game
+            {" "}
+            Junior
+            <Image
+              src="/logo.svg"
+              alt="react-logo"
+              width={32}
+              height={32}
+              className="inline-block align-middle"
+            />
+            React web developer working in fintech. Interested in game
             development, especially of grand strategy games, as well as
             urbanistics and architecture. Also, a <a href="/coshka.jpeg">🐈</a>
             lives with me.

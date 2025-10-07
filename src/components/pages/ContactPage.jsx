@@ -8,19 +8,18 @@ const ContactPage = () => {
     <>
       <title>Contact</title>
       <section className="about-container-contact">
-        <div className="pt-4">
-          <h1 className="about-text">Email:</h1>
+        <div>
+          <h1 className="about-text">
+            Email:{" "}
+            <Link
+              href="mailto:M.Koliakin@me.com"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              M.Koliakin@me.com
+            </Link>
+          </h1>
         </div>
-        <h2>
-          <Link
-            href="mailto:M.Koliakin@me.com"
-            style={{ color: "inherit", textDecoration: "none" }}
-            className="about-text"
-          >
-            M.Koliakin@me.com
-          </Link>
-        </h2>
-        <div className="api-text">
+        <div className="about-text">
           <h3>my local time</h3>
           <ApiTime></ApiTime>
         </div>

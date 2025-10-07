@@ -20,9 +20,7 @@ const Navbar = () => {
           <Link
             key={link.href}
             href={link.href}
-            className={`relative px-2 py-1 transition-all duration-300 ${
-              isActive ? "active logo" : "logo"
-            }`}
+            className={`relative px-2 ${isActive ? "active logo" : "logo"}`}
           >
             {link.label}
           </Link>
