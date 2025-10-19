@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Head from "next/head";
 
 function NginxARMProblem() {
   useEffect(() => {
@@ -11,7 +12,7 @@ function NginxARMProblem() {
   }, []);
   return (
     <>
-      <title>Nginx ARM Problem</title>
+      <Head>Nginx ARM Problem</Head>
 
       <section className="blog-container">
         <h1 className="about-text">Nginx Compatibility Issue</h1>

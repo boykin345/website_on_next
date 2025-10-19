@@ -9,7 +9,7 @@ const Navbar = () => {
   const links = [
     { href: "/", label: "About" },
     { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contact", label: "Contact Me" },
   ];
 
   return (

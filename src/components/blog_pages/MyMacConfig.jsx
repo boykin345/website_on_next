@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
+import Head from "next/head";
 
 function MyMacConfig() {
   return (
     <>
-      <title>My Mac Config</title>
+      <Head>My Mac Config</Head>
 
       <section className="blog-container">
         <h1 className="about-text">My Mac Config</h1>
@@ -16,7 +17,7 @@ brew update
 brew install \
 
 \n  apr \
-\n  apr-util \
+\n  apr-util \a
 \n   asciinema \
 \n   brotli \
 \n   c-ares \

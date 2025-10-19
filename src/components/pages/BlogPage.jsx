@@ -36,7 +36,7 @@ const BlogPage = () => {
           <span className="post-date about-text">August 2, 2025</span>
           <div className="post-info about-text">
             <Link
-              href="https://github.com/boykin345/Website"
+              href="https://github.com/boykin345/website_on_next"
               className="post-link"
             >
               This_website
