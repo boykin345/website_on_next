@@ -29,17 +29,17 @@ const AboutPage = () => {
         <div>
           <p className="about-text">
             {" "}
-            Junior
+            Junior{" "}
             <Image
               src="/logo.svg"
               alt="react-logo"
               width={32}
               height={32}
-              className="inline-block align-middle"
-            />
+              style={{ verticalAlign: "text-bottom", display: "inline-block" }}
+            />{" "}
             React web developer working in fintech. Interested in game
             development, especially of grand strategy games, as well as
-            urbanistics and architecture. Also, a <a href="/coshka.jpeg">🐈</a>
+            urbanistics and architecture. Also, a <a href="/coshka.jpeg">🐈</a> {" "}
             lives with me.
           </p>
         </div>
@@ -79,7 +79,7 @@ const AboutPage = () => {
           rel="noopener noreferrer"
           title="LinkedIn"
         >
-          <img src="LinkedIn.png" alt="LinkedIn" className="icon spin-cw" />
+          <img src="/LinkedIn.png" alt="LinkedIn" className="icon spin-cw" />
         </Link>
         <Link
           href="https://github.com/boykin345"

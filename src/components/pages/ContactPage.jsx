@@ -8,20 +8,24 @@ const ContactPage = () => {
     <>
       <title>Contact</title>
       <section className="about-container-contact">
-        <div>
-          <h1 className="about-text">
-            Email:{" "}
+        <h1 className="about-text">Contact Me</h1>
+        <div className="about-text">
+          <h2>Email</h2>
+          <p>
             <Link
               href="mailto:M.Koliakin@me.com"
-              style={{ color: "inherit", textDecoration: "none" }}
+              className="email-link"
             >
               M.Koliakin@me.com
             </Link>
-          </h1>
+          </p>
         </div>
         <div className="about-text">
-          <h3>my local time - YEKT (UTC+5)</h3>
-          <ApiTime></ApiTime>
+          <h2>My Local Time</h2>
+          <p className="timezone-info">YEKT (UTC+5)</p>
+          <div className="time-display">
+            <ApiTime />
+          </div>
         </div>
       </section>
     </>
