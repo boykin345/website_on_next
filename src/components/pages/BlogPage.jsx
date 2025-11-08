@@ -1,15 +1,8 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
 const BlogPage = () => {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
   return (
     <>
       <title>Blog</title>

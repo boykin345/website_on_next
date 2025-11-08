@@ -1,15 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 
 function NginxARMProblem() {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
   return (
     <>
       <Head>Nginx ARM Problem</Head>
