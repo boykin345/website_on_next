@@ -1,16 +1,15 @@
 "use client";
 import React from "react";
-import Head from "next/head";
 
 function MyMacConfig() {
   return (
     <>
-      <Head>My Mac Config</Head>
+      <title>My Mac Config</title>
 
-      <section className="blog-container">
-        <h1 className="about-text">My Mac Config</h1>
-        <div className="code-container">
-          <pre className="code-block">
+      <div className='blog-container content-container'>
+        <h1 className='about-text'>My Mac Config</h1>
+        <div className='code-container'>
+          <pre className='code-block'>
             {`brew update
 
 brew install \\
@@ -48,7 +47,7 @@ brew install --cask \\
   docker`}
           </pre>
         </div>
-      </section>
+      </div>
     </>
   );
 }

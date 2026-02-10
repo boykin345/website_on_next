@@ -14,12 +14,13 @@
     "react-dom": "^19.2.1",
     "react-markdown": "^10.1.0",
     "sass": "^1.93.2",
-    "yet-another-react-lightbox": "^3.25.0"
+    "yet-another-react-lightbox": "^3.28.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "^16.0.7"
+    "eslint-config-next": "^16.0.7",
+    "eslint-config-prettier": "^10.1.8"
   }
 }

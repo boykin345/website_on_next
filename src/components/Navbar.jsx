@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="nav about-container">
+    <div className='nav content-container'>
       {links.map((link) => {
         const isActive = pathname === link.href;
         return (
