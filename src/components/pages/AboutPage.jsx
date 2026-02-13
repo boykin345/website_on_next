@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { themeSettings } from "../../lib/constants";
+import { themeSettings } from "@/lib/constants";
 
 const AboutPage = () => {
   const { globalWidth, globalHeight } = themeSettings;
@@ -11,7 +11,7 @@ const AboutPage = () => {
     <>
       <title>About</title>
 
-      <div className='about-container'>
+      <div className='content-container about'>
         <div>
           <Image
             src='/favicon.ico'
@@ -25,7 +25,7 @@ const AboutPage = () => {
         <div>
           <p className='about-text'>
             {" "}
-            Middle{" "}
+            Junior{" "}
             <Image
               src='/logo.svg'
               alt='react-logo'
@@ -40,7 +40,7 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className='projects-container'>
+      <div className='content-container icons-container'>
         <Link
           href='https://soundcloud.com/user-735227306'
           target='_blank'

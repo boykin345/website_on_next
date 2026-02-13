@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <>
       <title>Contact</title>
-      <section className='about-container-contact'>
+      <section className='content-container about'>
         <h1 className='about-text'>Contact Me</h1>
         <div className='about-text'>
           <h2>Email</h2>

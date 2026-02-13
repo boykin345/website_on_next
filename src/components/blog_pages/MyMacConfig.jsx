@@ -6,7 +6,7 @@ function MyMacConfig() {
     <>
       <title>My Mac Config</title>
 
-      <div className='blog-container content-container'>
+      <div className=' content-container blog-container'>
         <h1 className='about-text'>My Mac Config</h1>
         <div className='code-container'>
           <pre className='code-block'>

@@ -6,31 +6,31 @@ const BlogPage = () => {
   return (
     <>
       <title>Blog</title>
-      <div className='blog-container'>
-        <div className='post-row'>
-          <span className='post-date about-text'>September 10, 2025</span>
-          <div className='post-info about-text'>
-            <Link href='/blog/nginx_arm_problem' className='post-link'>
+      <div className='content-container blog-container'>
+        <div className='blog-element'>
+          <span className='about-text'>September 10, 2025</span>
+          <div className=' about-text'>
+            <Link href='/blog/nginx_arm_problem' className='blog-link'>
               Nginx_ARM_Problem
             </Link>
             <span className='post-author'></span>
           </div>
         </div>
-        <div className='post-row'>
-          <span className='post-date about-text'>August 7, 2025</span>
-          <div className='post-info about-text'>
-            <Link href='/blog/my_mac_config' className='post-link'>
+        <div className='blog-element'>
+          <span className='about-text'>August 7, 2025</span>
+          <div className='about-text'>
+            <Link href='/blog/my_mac_config' className='blog-link' >
               My_Mac_Config
             </Link>
             <span className='post-author'></span>
           </div>
         </div>
-        <div className='post-row'>
-          <span className='post-date about-text'>August 2, 2025</span>
-          <div className='post-info about-text'>
+        <div className='blog-element'>
+          <span className='about-text'>August 2, 2025</span>
+          <div className='about-text'>
             <Link
               href='https://github.com/boykin345/website_on_next'
-              className='post-link'
+              className='blog-link'
             >
               This_website
             </Link>
