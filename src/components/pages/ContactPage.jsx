@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ApiTime from "../ApiTime";
+import ApiTime from "../common/ApiTime";
 import Link from "next/link";
 
 const ContactPage = () => {

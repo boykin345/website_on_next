@@ -1,3 +1,3 @@
-import NginxARMProblem from "@/components/blog_pages/NginxArmProblem";
+import NginxARMProblem from "@/components/pages/blog_pages/NginxArmProblem";
 
 export default NginxARMProblem;

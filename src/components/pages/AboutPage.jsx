@@ -14,11 +14,11 @@ const AboutPage = () => {
       <div className='content-container about'>
         <div>
           <Image
-            src='/favicon.ico'
-            alt='main-photo-page'
-            className='main-photo'
-            width={200}
-            height={200}
+              src='/favicon.ico'
+              alt='main-photo-page'
+              className='main-photo'
+              width={200}
+              height={200}
           />
         </div>
         <h1 className='about-text'>Mikhail Y. Kolyakin</h1>
@@ -27,11 +27,11 @@ const AboutPage = () => {
             {" "}
             Junior{" "}
             <Image
-              src='/logo.svg'
-              alt='react-logo'
-              width={32}
-              height={32}
-              style={{ verticalAlign: "text-bottom", display: "inline-block" }}
+                src='/logo.svg'
+                alt='react-logo'
+                width={32}
+                height={32}
+                style={{verticalAlign: "text-bottom", display: "inline-block"}}
             />{" "}
             React web developer working in fintech. Interested in game
             development, especially of grand strategy games, as well as
@@ -42,15 +42,15 @@ const AboutPage = () => {
       </div>
       <div className='content-container icons-container'>
         <Link
-          href='https://soundcloud.com/user-735227306'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='SoundCloud'
+            href='https://soundcloud.com/user-735227306'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='SoundCloud'
         >
           <Image
-            width={globalWidth}
-            height={globalHeight}
-            src='/SoundCloud.png'
+              width={globalWidth}
+              height={globalHeight}
+              src='/SoundCloud.png'
             alt='SoundCloud'
             className='icon spin-ccw'
           />
