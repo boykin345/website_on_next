@@ -1,3 +1,1 @@
-# Personal Website
-
-just open [Website](https://mikhailkolyakin.com)
+# Personal [Website](https://mikhailkolyakin.com)

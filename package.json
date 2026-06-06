@@ -9,7 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.19.4",
+    "lightbox.js-react": "^1.7.0",
     "next": "^16.0.7",
+    "postcss": "^8.5.15",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-markdown": "^10.1.0",
@@ -17,8 +20,8 @@
     "yet-another-react-lightbox": "^3.28.0"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@tailwindcss/postcss": "^4",
+    "@eslint/js": "^9.39.4",
+    "@tailwindcss/postcss": "^4.3.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "^0.2.4",
     "eslint-config-prettier": "^6.15.0",

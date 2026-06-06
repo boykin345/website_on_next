@@ -1,7 +1,9 @@
 "use client";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import arrow from "../../../public/lottie1.json"
 
 const Navbar = () => {
   const pathname = usePathname(); // get current path
@@ -26,6 +28,16 @@ const Navbar = () => {
           </Link>
         );
       })}
+      <div className="site-animation">
+        <Link href='/new'>
+          v2
+        </Link>
+      <DotLottieReact
+      data={arrow}
+      loop
+      autoplay
+        />
+      </div>
     </div>
   );
 };

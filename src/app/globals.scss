@@ -1,6 +1,7 @@
-$about-wallpaper: "/AboutWallpaper.jpg";
+$about-wallpaper: '/AboutWallpaper.jpg';
 $primary-color: #f5d9a6;
 $hover-color: #ffea63;
+@import 'tailwindcss';
 
 body {
   height: 100%;
@@ -183,7 +184,6 @@ h3 {
   border: 2px solid rgba(245, 217, 166, 0.4);
   animation: fadeInUp 1s ease-out forwards;
 
-
   &.about {
     display: flex;
     justify-content: center;
@@ -198,13 +198,17 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 .blog-link {
   color: $primary-color;
   &:hover {
     color: $hover-color;
   }
+}
+
+.site-animation {
+  inline-size: 4rem;
+  display: flex;
 }
 
 .blog-element {
@@ -221,7 +225,7 @@ h3 {
   overflow-x: auto;
   font-size: 0.75rem;
   border: 2px solid #555;
-  font-family: "Press Start 2P", monospace;
+  font-family: 'Press Start 2P', monospace;
   image-rendering: pixelated;
   word-wrap: break-word;
   white-space: pre-wrap;
@@ -260,7 +264,7 @@ h3 {
 
 @font-face {
   font-family: Pixelscapes;
-  src: url("/fonts/Pixelscapes.ttf");
+  src: url('/fonts/Pixelscapes.ttf');
 }
 
 @keyframes slideUpFromFloor {
@@ -383,7 +387,6 @@ h3 {
     box-sizing: border-box;
   }
 
-
   .about-container-contact {
     padding: 12px 15px;
     margin: 15px auto;
@@ -393,13 +396,4 @@ h3 {
 .icon-large {
   width: 80px;
   height: 80px;
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
