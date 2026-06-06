@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { themeSettings } from "@/lib/constants";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { themeSettings } from '@/lib/constants';
 
 const AboutPage = () => {
   const { globalWidth, globalHeight } = themeSettings;
@@ -11,132 +11,132 @@ const AboutPage = () => {
     <>
       <title>About</title>
 
-      <div className='content-container about'>
+      <div className="content-container about">
         <div>
           <Image
-              src='/favicon.ico'
-              alt='main-photo-page'
-              className='main-photo'
-              width={200}
-              height={200}
+            src="/favicon.ico"
+            alt="main-photo-page"
+            className="main-photo"
+            width={200}
+            height={200}
           />
         </div>
-        <h1 className='about-text'>Mikhail Y. Kolyakin</h1>
+        <h1 className="about-text">Mikhail Y. Kolyakin</h1>
         <div>
-          <p className='about-text'>
-            {" "}
-            Junior{" "}
+          <p className="about-text">
+            {' '}
+            Junior{' '}
             <Image
-                src='/logo.svg'
-                alt='react-logo'
-                width={32}
-                height={32}
-                style={{verticalAlign: "text-bottom", display: "inline-block"}}
-            />{" "}
+              src="/logo.svg"
+              alt="react-logo"
+              width={32}
+              height={32}
+              style={{ verticalAlign: 'text-bottom', display: 'inline-block' }}
+            />{' '}
             React web developer working in fintech. Interested in game
             development, especially of grand strategy games, as well as
-            urbanistics and architecture. Also, a <a href='/coshka.jpeg'>🐈</a>{" "}
+            urbanistics and architecture. Also, a <a href="/coshka.jpeg">🐈</a>{' '}
             lives with me.
           </p>
         </div>
       </div>
-      <div className='content-container icons-container'>
+      <div className="content-container icons-container">
         <Link
-            href='https://soundcloud.com/user-735227306'
-            target='_blank'
-            rel='noopener noreferrer'
-            title='SoundCloud'
-        >
-          <Image
-              width={globalWidth}
-              height={globalHeight}
-              src='/SoundCloud.png'
-            alt='SoundCloud'
-            className='icon spin-ccw'
-          />
-        </Link>
-        <Link
-          href='https://open.spotify.com/user/31lpevsqaz6ftqu23sk2vddr3pdq?si=e4b3c22b1a0147e7'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='Spotify'
+          href="https://soundcloud.com/user-735227306"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="SoundCloud"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/Spotify.png'
-            alt='Spotify'
-            className='icon spin-cw'
+            src="/SoundCloud.png"
+            alt="SoundCloud"
+            className="icon spin-ccw"
           />
         </Link>
         <Link
-          href='https://steamcommunity.com/id/juzzyboykin'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='Steam'
+          href="https://open.spotify.com/user/31lpevsqaz6ftqu23sk2vddr3pdq?si=e4b3c22b1a0147e7"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Spotify"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/Steam.png'
-            alt='Steam'
-            className='icon spin-ccw'
+            src="/Spotify.png"
+            alt="Spotify"
+            className="icon spin-cw"
           />
         </Link>
         <Link
-          href='https://www.linkedin.com/in/mikhail-kolyakin-946734259/'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='LinkedIn'
+          href="https://steamcommunity.com/id/juzzyboykin"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Steam"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/LinkedIn.png'
-            alt='LinkedIn'
-            className='icon spin-cw'
+            src="/Steam.png"
+            alt="Steam"
+            className="icon spin-ccw"
           />
         </Link>
         <Link
-          href='https://github.com/boykin345'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='GitHub'
+          href="https://www.linkedin.com/in/mikhail-kolyakin-946734259/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/github.png'
-            alt='GitHub'
-            className='icon spin-ccw icon-large'
+            src="/LinkedIn.png"
+            alt="LinkedIn"
+            className="icon spin-cw"
           />
         </Link>
         <Link
-          href='https://x.com/BoyKin345'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='Twitter'
+          href="https://github.com/boykin345"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/Twitter.png'
-            alt='Twitter'
-            className='icon spin-cw'
+            src="/github.png"
+            alt="GitHub"
+            className="icon spin-ccw icon-large"
           />
         </Link>
         <Link
-          href='https://www.reddit.com/user/Substantial-Purple60/'
-          target='_blank'
-          rel='noopener noreferrer'
-          title='Reddit'
+          href="https://x.com/BoyKin345"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Twitter"
         >
           <Image
             width={globalWidth}
             height={globalHeight}
-            src='/Reddit.png'
-            alt='Reddit'
-            className='icon spin-ccw'
+            src="/Twitter.png"
+            alt="Twitter"
+            className="icon spin-cw"
+          />
+        </Link>
+        <Link
+          href="https://www.reddit.com/user/Substantial-Purple60/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Reddit"
+        >
+          <Image
+            width={globalWidth}
+            height={globalHeight}
+            src="/Reddit.png"
+            alt="Reddit"
+            className="icon spin-ccw"
           />
         </Link>
       </div>

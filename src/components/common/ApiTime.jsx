@@ -1,5 +1,5 @@
-"use client";
-import React, { useEffect, useState } from "react";
+'use client';
+import React, { useEffect, useState } from 'react';
 
 const ApiTime = () => {
   const [time, setTime] = useState(new Date());
@@ -14,11 +14,11 @@ const ApiTime = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const formattedTime = new Intl.DateTimeFormat("en-GB", {
-    timeZone: "Asia/Yekaterinburg",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
+  const formattedTime = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Yekaterinburg',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
     hour12: false,
   }).format(time);
 
